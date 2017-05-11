@@ -3,7 +3,6 @@
 	$judul="Panel Guru";
 	$kontak = mysql_fetch_array(mysql_query("SELECT * from guru"));
 
-	include("../include/guru/header.php");
 ?>
 <!DOCTYPE html>
 	<html lang="en">
