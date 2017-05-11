@@ -1,3 +1,10 @@
+<?php
+	include '../koneksi.php';
+	$judul="Panel Guru";
+	$kontak = mysql_fetch_array(mysql_query("SELECT * from guru"));
+
+	include("../include/guru/header.php");
+?>
 <!DOCTYPE html>
 	<html lang="en">
 	<head>
@@ -18,8 +25,8 @@
 			<div class="divider"></div>
 			<div class="info_kontak">
 				<p>Info kontak guru</p>
-				<p>Email : - </p>
-				<p>No Hp : - </p>
+				<p>Email : <?php echo $kontak['no_hp']; ?></p>
+				<p>No Hp : <?php echo $kontak['email']; ?></p>
 			</div>
 		</div>
 	</div>
