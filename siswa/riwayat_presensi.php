@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include '../koneksi.php';
 
 	$cari = $_POST['cari'];
@@ -43,4 +43,3 @@
 
 </body>
 </html>
-
