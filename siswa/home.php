@@ -24,8 +24,8 @@
 			<div class="divider"></div>
 			<div class="info_kontak">
 				<p>Info kontak guru</p>
-				<p>Email : <?php echo $kontak['no_hp']; ?></p>
-				<p>No Hp : <?php echo $kontak['email']; ?></p>
+				<p>Email : <?php echo $kontak['email']; ?></p>
+				<p>No Hp : <?php echo $kontak['no_hp']; ?></p>
 			</div>
 		</div>
 	</div>
