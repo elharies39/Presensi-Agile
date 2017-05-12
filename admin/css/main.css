@@ -1,0 +1,476 @@
+/* ================================= 
+  UMUM
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	color: #000;
+	margin: 0;
+  background: #fafafa;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+/* ================================= 
+  FONT
+==================================== */
+
+@font-face {
+   font-family: roboto;
+   src: url(Roboto-Medium.ttf);
+}
+
+
+/* ================================= 
+  EDIT button
+==================================== */
+
+.edit_s{
+  color: #000;
+  padding: 4px 8px;  
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.edit_s:hover{
+  background: #000;
+  color: #fff;
+}
+
+/* ================================= 
+  LOGIN ADMIN
+==================================== */
+.wrap_login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height : 100vh;
+}
+
+.login{
+  background-color: #fff;
+  display: flex; 
+  width: 320px; 
+  flex-direction: column;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.judul_login{
+  padding: 0 16px;
+  background: #3F51B5;
+}
+
+.judul_login{
+  color: #fff;
+}
+
+.form_login{
+  padding: 0 16px;
+}
+
+.form_input_login{
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  padding: 12px;
+  margin: 16px 2px 26px;
+  width: 100%;
+}
+
+.form_input_login:focus{
+  border-bottom: 2px solid #3F51B5;
+  outline: none;
+}
+
+/* ================================= 
+  HEADER
+==================================== */
+.main_header{
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  white-space: nowrap;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
+  background: #3F51B5;
+  position: fixed;
+  z-index: 2;
+}
+
+.wrap_header{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.judul{
+  margin:0;
+  color: #fff;
+}
+
+.form_cari_{
+  margin-top: 14px;
+  display: flex;
+}
+
+.form_cari__{
+  border: none;
+  margin-right: 4px;
+}
+
+/* ================================= 
+  BODY
+==================================== */
+.wrap_content{
+  padding-top: 70px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.wrap_content_{
+  display: flex;
+  margin: 0 auto;
+}
+
+.rigth_content{
+  margin-top: 9px;
+  width: 100%;
+  margin-left: 200px;
+}
+.left_content{
+  position: fixed;
+  height: 100vh;
+  width: 13%;
+}
+
+/* ================================= 
+  NAVIGAION
+==================================== */
+.main_nav {
+  border-right: 1px solid rgba(0,0,0,.07);
+}
+
+.main_nav a {
+  font-size: 14px;
+  list-style: none;
+}
+
+.main_nav a:hover {
+  color: #3F51B5;
+}
+
+.main_nav .on {
+  color: #3F51B5;
+}
+
+.main_nav li {
+  margin-top: 9px;
+}
+
+/* ================================= 
+  TABEL
+==================================== */
+
+.tabel {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th{
+  padding: 10px 5px;
+  text-align: left;
+}
+
+tr {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+
+/* ================================= 
+  TAMBAH SISWA
+==================================== */
+
+.input_s{
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  padding: 12px;
+  margin: 16px 2px 26px;
+  width: 685px;
+}
+
+.input_s:focus{
+  border-bottom: 2px solid #3F51B5;
+  outline: none;
+}
+
+#button_tambah_siswa {
+  float: right;
+  margin:0;
+}
+
+.form_tambah {
+  width: 685px;
+}
+
+/* ================================= 
+  BUTTON
+==================================== */
+
+.btn__{
+  padding: 0 16px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  height: 36px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  background: #3F51B5;
+}
+
+.button_login{
+  float: right;
+  margin-bottom: 16px;
+}
+
+.bt{
+  display: block;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  transition: .2s ease-out;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.bt:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;
+  background-color: rgba(236, 240, 241, .3);
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  width: 0;
+  padding-top: 0;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.bt:active:before {
+  width: 120%;
+  padding-top: 120%;
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+.btn_save{
+  width: 100px;
+  height: 50px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.one{
+  background-color: #3F51B5;
+}
+.one:hover{
+  background-color: lighten(#3F51B5,2);
+}
+
+
+/* ================================= 
+  CHECKBOX
+==================================== */
+
+.checkbox {
+  padding: 10px 20px;
+  transform: translateZ(0); 
+}
+
+.checkbox label {
+  cursor: pointer;
+  padding-left: 0; }
+
+.checkbox input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  left: 0;
+  pointer-events: none; }
+
+.checkbox .checkbox-material {
+  vertical-align: middle;
+  position: relative;
+  top: 3px; 
+}
+
+.checkbox .checkbox-material:before {
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 4px;
+  width: 4px;
+  border-radius: 100%;
+  z-index: 1;
+  opacity: 0;
+  margin: 0; 
+}
+
+.checkbox .checkbox-material .check {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 2px;
+  overflow: hidden;
+  z-index: 1; 
+}
+
+.checkbox .checkbox-material .check:before {
+  position: absolute;
+  content: "";
+  transform: rotate(45deg);
+  display: block;
+  margin-top: -4px;
+  margin-left: 6px;
+  width: 0;
+  height: 0;
+  box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0 inset;
+  animation: checkbox-off 0.3s forwards ease-out; 
+}
+
+.checkbox input[type=checkbox]:focus + .checkbox-material .check:after {
+  opacity: 0.2; 
+}
+
+.checkbox input[type=checkbox]:checked + .checkbox-material .check:before {
+  box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+  animation: checkbox-on 0.3s forwards ease-out; 
+}
+
+.checkbox input[type=checkbox]:not(:checked) + .checkbox-material:before {
+  animation: rippleOff 700ms forwards ease-out; 
+}
+
+.checkbox input[type=checkbox]:checked + .checkbox-material:before {
+  animation: rippleOn 700ms forwards ease-out; 
+}
+
+.checkbox input[type=checkbox]:not(:checked) + .checkbox-material .check:after {
+  animation: rippleOff 700ms forwards ease-out; 
+}
+
+.checkbox input[type=checkbox]:checked + .checkbox-material .check:after {
+  animation: rippleOn 700ms forwards ease-out; 
+}
+
+.checkbox input[type=checkbox][disabled]:not(:checked) ~ .checkbox-material .check:before,
+.checkbox input[type=checkbox][disabled] + .circle {
+  opacity: 0.5; 
+}
+
+.checkbox input[type=checkbox][disabled] + .checkbox-material .check:after {
+  background-color: rgba(0, 0, 0, 0.84);
+  transform: rotate(-45deg); 
+}
+
+/********
+coloured alternatives
+********/
+
+/******
+Animations
+*******/
+@keyframes checkbox-on {
+  0% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 15px 2px 0 11px; 
+  }
+  50% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px 2px 0 11px; 
+  }
+  100% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px; 
+  } 
+}
+@keyframes checkbox-off {
+  0% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px, 0 0 0 0 inset; 
+  }
+  25% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px, 0 0 0 0 inset; 
+  }
+  50% {
+    transform: rotate(45deg);
+    margin-top: -4px;
+    margin-left: 6px;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 15px 2px 0 11px, 0 0 0 0 inset; 
+  }
+  51% {
+    transform: rotate(0deg);
+    margin-top: -2px;
+    margin-left: -2px;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0px 0px 0 10px inset; 
+  }
+  100% {
+    transform: rotate(0deg);
+    margin-top: -2px;
+    margin-left: -2px;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0px 0px 0 0px inset; 
+  } 
+}
+@keyframes rippleOn {
+  0% {
+    opacity: 0.5; 
+  }
+  100% {
+    opacity: 0;
+    transform: scale(13, 13); 
+  } 
+}
+@keyframes rippleOff {
+  0% {
+    opacity: 0.5; 
+  }
+  100% {
+    opacity: 0;
+    transform: scale(13, 13); 
+  } 
+}

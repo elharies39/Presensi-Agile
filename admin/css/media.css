@@ -1,0 +1,39 @@
+/*================================= 
+  INI AKTIF KETIKA UKURANNYA 769px keatas 
+==================================== */
+
+@media (min-width: 769px) {
+  .main-header, .main-nav{
+    display: flex;
+  }
+
+  .main-header{
+    justify-content: center;
+  }
+
+  body .nav-stick{
+    width: 80%;
+    left: 10%;
+  }
+
+    .main-header .main-nav a{
+    font-size: 16px;
+  }
+
+  .wrap-footer-bawah{
+  	display: flex;
+  	flex-direction: row;
+  }
+  .foot{
+	  flex-grow: 1;
+  }
+
+  #copy{
+  	text-align: right;
+  }
+
+  .form-input{
+    width: 100%;
+  }
+
+}
