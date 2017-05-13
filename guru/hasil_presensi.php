@@ -22,10 +22,10 @@
 						$query = "SELECT p.status_presensi, s.nama, s.nis from presensi p JOIN siswa s ON p.id_siswa = s.nis";
 								$sql = mysql_query($query);
 								$no = 1;
-								while ($s = mysql_fetch_array($sql)) {
-									$nama = $s['nama'];
-									$nis = $s['nis'];
-									$kehadiran = $s['status_presensi'];
+								while ($siswa = mysql_fetch_array($sql)) {
+									$nama = $siswa['nama'];
+									$nis = $siswa['nis'];
+									$kehadiran = $siswa['status_presensi'];
 
 									if ($kehadiran == NULL) {
 										$kehadiran = "tidak hadir";
