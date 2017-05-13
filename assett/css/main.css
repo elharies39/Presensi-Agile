@@ -52,8 +52,9 @@ a {
 }
 
 /* ================================= 
-  LOGIN ADMIN
+  INI LOGIN ADMIN
 ==================================== */
+
 .wrap_login{
   display: flex;
   justify-content: center;
