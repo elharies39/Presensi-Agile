@@ -1,8 +1,8 @@
 <?php
 	include '../koneksi.php';
 
-	$tanggal = date("Y/m/d");
-	$judul="Panel Guru  $tanggal";
+	$tanggal_saat_ini = date("Y/m/d");
+	$judul="Panel Guru  $tanggal_saat_ini";
 	include("../include/guru/header.php");
 ?>
 

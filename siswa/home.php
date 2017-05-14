@@ -18,7 +18,7 @@
 				<h3>Lihat Riwayat Presensi</h3>
 			</div>
 			<form action="riwayat_presensi.php" method="POST" class="form_login" accept-charset="utf-8">
-				<input type="text" name="cari" placeholder="NIS" class="form_input_login" required><br>
+				<input class="form_input_login" name="cari" placeholder="NIS" type="text" required><br>
 				<input class="button_login btn__ bt one" type="submit" value="CARI">
 			</form>
 			<div class="divider"></div>
