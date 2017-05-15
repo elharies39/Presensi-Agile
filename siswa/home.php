@@ -9,7 +9,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Riwayat Presensi</title>
-		<link rel="stylesheet" href="../assett/css-siswa/main-siswa.css">
+		<link href="../assett/css-siswa/main-siswa.css" rel="stylesheet">
 	</head>
 	<body>
 	<div class="wrap_login">
@@ -17,7 +17,7 @@
 			<div class="judul_login">
 				<h3>Lihat Riwayat Presensi</h3>
 			</div>
-			<form action="riwayat_presensi.php" method="POST" class="form_login" accept-charset="utf-8">
+			<form accept-charset="utf-8" action="riwayat_presensi.php" class="form_login" method="POST">
 				<input class="form_input_login" name="cari" placeholder="NIS" type="text" required><br>
 				<input class="button_login btn__ bt one" type="submit" value="CARI">
 			</form>

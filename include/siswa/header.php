@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-  	<link rel="stylesheet" href="../assett/css-siswa/main-siswa.css">
+  	<link href="../assett/css-siswa/main-siswa.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   	<title>Riwayat Presensi</title>
 </head>
